@@ -1,4 +1,4 @@
-timekeeper
+TimeKeeper
 ==========
 
-How do you keep time?
+How do you keep track of time?
