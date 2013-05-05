@@ -14,6 +14,7 @@
 		8C6243AF1735AE070028DC46 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243AD1735AE070028DC46 /* MainMenu.xib */; };
 		8C6243B21735AE070028DC46 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243B11735AE070028DC46 /* rb_main.rb */; };
 		8C6243B41735AE070028DC46 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243B31735AE070028DC46 /* AppDelegate.rb */; };
+		8C6243BE17365E870028DC46 /* stopwatch.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243BD17365E870028DC46 /* stopwatch.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		8C6243AE1735AE070028DC46 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8C6243B11735AE070028DC46 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		8C6243B31735AE070028DC46 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		8C6243BD17365E870028DC46 /* stopwatch.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = stopwatch.rb; path = /Users/me/Projects/ios/TimeKeeper/TimeKeeper/lib/stopwatch.rb; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		8C6243B01735AE070028DC46 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8C6243BD17365E870028DC46 /* stopwatch.rb */,
 				8C6243B11735AE070028DC46 /* rb_main.rb */,
 			);
 			name = "Other Sources";
@@ -189,6 +192,7 @@
 				8C6243AF1735AE070028DC46 /* MainMenu.xib in Resources */,
 				8C6243B21735AE070028DC46 /* rb_main.rb in Resources */,
 				8C6243B41735AE070028DC46 /* AppDelegate.rb in Resources */,
+				8C6243BE17365E870028DC46 /* stopwatch.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 				8C6243B91735AE070028DC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C6243BA1735AE070028DC46 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -365,6 +370,7 @@
 				8C6243BC1735AE070028DC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
