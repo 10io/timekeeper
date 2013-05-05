@@ -15,6 +15,7 @@
 		8C6243B21735AE070028DC46 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243B11735AE070028DC46 /* rb_main.rb */; };
 		8C6243B41735AE070028DC46 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243B31735AE070028DC46 /* AppDelegate.rb */; };
 		8C6243BE17365E870028DC46 /* stopwatch.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243BD17365E870028DC46 /* stopwatch.rb */; };
+		8C6243C617369E8D0028DC46 /* timekeeper.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8C6243C517369E8D0028DC46 /* timekeeper.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		8C6243B11735AE070028DC46 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		8C6243B31735AE070028DC46 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		8C6243BD17365E870028DC46 /* stopwatch.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = stopwatch.rb; path = /Users/me/Projects/ios/TimeKeeper/TimeKeeper/lib/stopwatch.rb; sourceTree = "<absolute>"; };
+		8C6243C517369E8D0028DC46 /* timekeeper.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = timekeeper.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		8C6243901735AE070028DC46 = {
 			isa = PBXGroup;
 			children = (
+				8C6243C517369E8D0028DC46 /* timekeeper.icns */,
 				8C6243A31735AE070028DC46 /* TimeKeeper */,
 				8C62439B1735AE070028DC46 /* Frameworks */,
 				8C62439A1735AE070028DC46 /* Products */,
@@ -193,6 +196,7 @@
 				8C6243B21735AE070028DC46 /* rb_main.rb in Resources */,
 				8C6243B41735AE070028DC46 /* AppDelegate.rb in Resources */,
 				8C6243BE17365E870028DC46 /* stopwatch.rb in Resources */,
+				8C6243C617369E8D0028DC46 /* timekeeper.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
