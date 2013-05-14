@@ -17,6 +17,8 @@
 		8C0A462E1742CDBB00A12670 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0A460E1742CDBA00A12670 /* Cocoa.framework */; };
 		8C0A46361742CDBB00A12670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A46341742CDBB00A12670 /* InfoPlist.strings */; };
 		8C0A46391742CDBB00A12670 /* TimeKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A46381742CDBB00A12670 /* TimeKeeperTests.m */; };
+		8C0A46451742CE8200A12670 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A46431742CE8200A12670 /* MainViewController.m */; };
+		8C0A46461742CE8200A12670 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A46441742CE8200A12670 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		8C0A46351742CDBB00A12670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C0A46371742CDBB00A12670 /* TimeKeeperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeKeeperTests.h; sourceTree = "<group>"; };
 		8C0A46381742CDBB00A12670 /* TimeKeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeKeeperTests.m; sourceTree = "<group>"; };
+		8C0A46421742CE8200A12670 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8C0A46431742CE8200A12670 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8C0A46441742CE8200A12670 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +119,7 @@
 		8C0A46141742CDBA00A12670 /* TimeKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				8C0A46201742CDBB00A12670 /* TimeKeeperAppDelegate.h */,
-				8C0A46211742CDBB00A12670 /* TimeKeeperAppDelegate.m */,
-				8C0A46231742CDBB00A12670 /* MainMenu.xib */,
+				8C0A46471742D05D00A12670 /* GUI */,
 				8C0A46151742CDBA00A12670 /* Supporting Files */,
 			);
 			path = TimeKeeper;
@@ -151,6 +154,19 @@
 				8C0A46341742CDBB00A12670 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C0A46471742D05D00A12670 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				8C0A46231742CDBB00A12670 /* MainMenu.xib */,
+				8C0A46421742CE8200A12670 /* MainViewController.h */,
+				8C0A46431742CE8200A12670 /* MainViewController.m */,
+				8C0A46441742CE8200A12670 /* MainViewController.xib */,
+				8C0A46201742CDBB00A12670 /* TimeKeeperAppDelegate.h */,
+				8C0A46211742CDBB00A12670 /* TimeKeeperAppDelegate.m */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +244,7 @@
 				8C0A46191742CDBA00A12670 /* InfoPlist.strings in Resources */,
 				8C0A461F1742CDBB00A12670 /* Credits.rtf in Resources */,
 				8C0A46251742CDBB00A12670 /* MainMenu.xib in Resources */,
+				8C0A46461742CE8200A12670 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +281,7 @@
 			files = (
 				8C0A461B1742CDBB00A12670 /* main.m in Sources */,
 				8C0A46221742CDBB00A12670 /* TimeKeeperAppDelegate.m in Sources */,
+				8C0A46451742CE8200A12670 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
