@@ -119,6 +119,7 @@
 		8C0A46141742CDBA00A12670 /* TimeKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				8C0A4649174405A500A12670 /* utils */,
 				8C0A46471742D05D00A12670 /* GUI */,
 				8C0A46151742CDBA00A12670 /* Supporting Files */,
 			);
@@ -167,6 +168,13 @@
 				8C0A46211742CDBB00A12670 /* TimeKeeperAppDelegate.m */,
 			);
 			name = GUI;
+			sourceTree = "<group>";
+		};
+		8C0A4649174405A500A12670 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +479,7 @@
 				8C0A463E1742CDBB00A12670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C0A463F1742CDBB00A12670 /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +488,7 @@
 				8C0A46411742CDBB00A12670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

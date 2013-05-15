@@ -10,4 +10,8 @@
 
 @interface MainViewController : NSViewController
 
+@property (nonatomic, strong) IBOutlet NSTextField *dateTextField;
+@property (nonatomic, strong) IBOutlet NSTextField *hourTextField;
+@property (nonatomic, strong) IBOutlet NSTextField *remainingTextField;
+
 @end
