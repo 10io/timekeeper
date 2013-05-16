@@ -19,6 +19,8 @@
 		8C0A46391742CDBB00A12670 /* TimeKeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A46381742CDBB00A12670 /* TimeKeeperTests.m */; };
 		8C0A46451742CE8200A12670 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A46431742CE8200A12670 /* MainViewController.m */; };
 		8C0A46461742CE8200A12670 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A46441742CE8200A12670 /* MainViewController.xib */; };
+		8C0A464C17440FA400A12670 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A464B17440FA400A12670 /* StopWatch.m */; };
+		8C0A464D17440FA400A12670 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A464B17440FA400A12670 /* StopWatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		8C0A46421742CE8200A12670 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8C0A46431742CE8200A12670 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8C0A46441742CE8200A12670 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8C0A464A17440FA400A12670 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		8C0A464B17440FA400A12670 /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,8 @@
 		8C0A4649174405A500A12670 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				8C0A464A17440FA400A12670 /* StopWatch.h */,
+				8C0A464B17440FA400A12670 /* StopWatch.m */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				8C0A461B1742CDBB00A12670 /* main.m in Sources */,
 				8C0A46221742CDBB00A12670 /* TimeKeeperAppDelegate.m in Sources */,
 				8C0A46451742CE8200A12670 /* MainViewController.m in Sources */,
+				8C0A464C17440FA400A12670 /* StopWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0A46391742CDBB00A12670 /* TimeKeeperTests.m in Sources */,
+				8C0A464D17440FA400A12670 /* StopWatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
