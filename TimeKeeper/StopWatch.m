@@ -32,6 +32,7 @@ typedef enum {
         self.state = kNotRunning;
         self.hourFormatter = [[NSDateFormatter alloc] init];
         [self.hourFormatter setDateFormat:@"HH:mm:ss"];
+        [self.hourFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
     }
     
     return self;

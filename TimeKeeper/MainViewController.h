@@ -14,4 +14,13 @@
 @property (nonatomic, strong) IBOutlet NSTextField *hourTextField;
 @property (nonatomic, strong) IBOutlet NSTextField *remainingTextField;
 
+@property (nonatomic, strong) IBOutlet NSButton *startButton;
+@property (nonatomic, strong) IBOutlet NSButton *pauseButton;
+@property (nonatomic, strong) IBOutlet NSButton *unpauseButton;
+
+
+
+- (IBAction) start:(id) sender;
+- (IBAction) pause:(id) sender;
+- (IBAction) unpause:(id) sender;
 @end
