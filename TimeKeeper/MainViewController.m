@@ -47,12 +47,7 @@
     [self.dayTextField setStringValue: [self.dayFormatter stringFromDate:now]];
     [self.hourTextField setStringValue:[self.hourFormatter stringFromDate:now]];
     
-    NSMutableString *remainingText = [[NSMutableString alloc] initWithString:[self.stopWatch remaining]];
-    if ([self.stopWatch paused])
-    {
-        [remainingText appendString:@" (Paused)"];
-    }
-    [self.remainingTextField setStringValue:remainingText];
+    [self.remainingTextField setStringValue: [self.stopWatch remaining]];
     
     [self.startButton setHidden: true];
     [self.pauseButton setHidden: true];
@@ -72,7 +67,14 @@
     {
         [self.unpauseButton setHidden: false];
     }
-    
+
+    if([self.stopWatch fifteenMinutesRemaining]) {
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"15min"];
+    }
+
+    if([self.stopWatch fiveMinutesRemaining]) {
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"5min"];
+    }
 }
 
 - (IBAction) start:(id) sender

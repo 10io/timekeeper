@@ -20,6 +20,9 @@
 -(BOOL) running;
 -(BOOL) paused;
 
+-(BOOL) fifteenMinutesRemaining;
+-(BOOL) fiveMinutesRemaining;
+
 -(NSString*) remaining;
 
 @end

@@ -19,7 +19,9 @@ typedef enum {
     @property(nonatomic, assign) NSTimeInterval duration;
     @property(nonatomic, strong) NSDate *startDate;
     @property(nonatomic, strong) NSDate *stopDate;
-@property(nonatomic, strong) NSDateFormatter* hourFormatter;
+    @property(nonatomic, strong) NSDateFormatter* hourFormatter;
+
+    -(NSTimeInterval) remainingInSeconds;
 @end
 
 @implementation StopWatch
@@ -56,6 +58,26 @@ typedef enum {
     self.state = kRunning;
 }
 
+-(BOOL) fifteenMinutesRemaining
+{
+    if([self counting])
+    {
+        return [self remainingInSeconds] < 60 * 15;
+    }
+    
+    return false;
+}
+
+-(BOOL) fiveMinutesRemaining
+{
+    if([self counting])
+    {
+        return [self remainingInSeconds] < 60 * 5;
+    }
+    
+    return false;
+}
+
 -(NSString*) remaining
 {
     if (!self.counting)
@@ -63,12 +85,7 @@ typedef enum {
         return @"00:00:00";
     }
     
-    NSTimeInterval seconds = self.duration - [[NSDate date] timeIntervalSince1970] + [self.startDate timeIntervalSince1970];
-    
-    if (self.paused)
-    {
-        seconds = self.duration - [self.stopDate timeIntervalSince1970] + [self.startDate timeIntervalSince1970];
-    }
+    NSTimeInterval seconds = [self remainingInSeconds];
     
     return [self.hourFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:seconds]];
 }
@@ -88,5 +105,16 @@ typedef enum {
     return self.state == kPaused;
 }
 
+-(NSTimeInterval) remainingInSeconds
+{
+    NSTimeInterval remaining = self.duration - [[NSDate date] timeIntervalSince1970] + [self.startDate timeIntervalSince1970];
+    
+    if (self.paused)
+    {
+        remaining = self.duration - [self.stopDate timeIntervalSince1970] + [self.startDate timeIntervalSince1970];
+    }
+    
+    return remaining;
+}
 
 @end
