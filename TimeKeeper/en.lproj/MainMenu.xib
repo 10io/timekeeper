@@ -1292,25 +1292,25 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{469, 374}, {340, 104}}</string>
+				<string key="NSWindowRect">{{469, 374}, {234, 104}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">TimeKeeper</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
-				<string key="NSWindowContentMaxSize">{340, 104}</string>
-				<string key="NSWindowContentMinSize">{340, 104}</string>
+				<string key="NSWindowContentMaxSize">{234, 104}</string>
+				<string key="NSWindowContentMinSize">{234, 104}</string>
 				<object class="NSView" key="NSWindowView" id="439893737">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{340, 104}</string>
+					<string key="NSFrameSize">{234, 104}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
-				<string key="NSMinSize">{340, 126}</string>
-				<string key="NSMaxSize">{340, 126}</string>
+				<string key="NSMinSize">{234, 126}</string>
+				<string key="NSMaxSize">{234, 126}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="976324537">

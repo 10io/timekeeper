@@ -24,6 +24,10 @@
 		8C0A464F1746CC9400A12670 /* timekeeper.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A464E1746CC9300A12670 /* timekeeper.icns */; };
 		8C29A9901747DBA10098AED7 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A98F1747DBA10098AED7 /* calendar.png */; };
 		8C29A9911747DBA10098AED7 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A98F1747DBA10098AED7 /* calendar.png */; };
+		8C29A9961747E5A60098AED7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A9951747E5A60098AED7 /* play.png */; };
+		8C29A9971747E5A60098AED7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A9951747E5A60098AED7 /* play.png */; };
+		8C29A9991747E5C00098AED7 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A9981747E5C00098AED7 /* pause.png */; };
+		8C29A99A1747E5C00098AED7 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A9981747E5C00098AED7 /* pause.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,8 @@
 		8C0A464B17440FA400A12670 /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
 		8C0A464E1746CC9300A12670 /* timekeeper.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = timekeeper.icns; sourceTree = "<group>"; };
 		8C29A98F1747DBA10098AED7 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		8C29A9951747E5A60098AED7 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		8C29A9981747E5C00098AED7 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +199,8 @@
 		8C29A98E1747DB790098AED7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8C29A9981747E5C00098AED7 /* pause.png */,
+				8C29A9951747E5A60098AED7 /* play.png */,
 				8C29A98F1747DBA10098AED7 /* calendar.png */,
 			);
 			name = images;
@@ -276,6 +284,8 @@
 				8C0A46461742CE8200A12670 /* MainViewController.xib in Resources */,
 				8C0A464F1746CC9400A12670 /* timekeeper.icns in Resources */,
 				8C29A9901747DBA10098AED7 /* calendar.png in Resources */,
+				8C29A9961747E5A60098AED7 /* play.png in Resources */,
+				8C29A9991747E5C00098AED7 /* pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +295,8 @@
 			files = (
 				8C0A46361742CDBB00A12670 /* InfoPlist.strings in Resources */,
 				8C29A9911747DBA10098AED7 /* calendar.png in Resources */,
+				8C29A9971747E5A60098AED7 /* play.png in Resources */,
+				8C29A99A1747E5C00098AED7 /* pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
