@@ -23,4 +23,9 @@
     return YES;
 }
 
+- (NSMenu *)applicationDockMenu:(NSApplication *)sender
+{
+    return [self.mainViewController applicationDockMenu];
+}
+
 @end

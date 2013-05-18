@@ -92,4 +92,34 @@
     [self.stopWatch unpause];
 }
 
+- (NSMenu *)applicationDockMenu
+{
+    /* allocate menu */
+    NSMenu* result = [[NSMenu alloc] initWithTitle: @""];
+    id item;
+
+    if(![self.stopWatch counting])
+    {
+        item = [[NSMenuItem alloc] initWithTitle:@"Start" action:@selector(start:) keyEquivalent:@""];
+        [item setTarget: self];
+        [result addItem: item];
+    }
+    
+    if([self.stopWatch running])
+    {
+        item = [[NSMenuItem alloc] initWithTitle:@"Pause" action:@selector(pause:) keyEquivalent:@""];
+        [item setTarget: self];
+        [result addItem: item];
+    }
+    
+    if([self.stopWatch paused])
+    {
+        item = [[NSMenuItem alloc] initWithTitle:@"Unpause" action:@selector(unpause:) keyEquivalent:@""];
+        [item setTarget: self];
+        [result addItem: item];
+    }
+             
+    return result;
+}
+
 @end

@@ -19,9 +19,9 @@
 @property (nonatomic, strong) IBOutlet NSButton *pauseButton;
 @property (nonatomic, strong) IBOutlet NSButton *unpauseButton;
 
-
-
 - (IBAction) start:(id) sender;
 - (IBAction) pause:(id) sender;
 - (IBAction) unpause:(id) sender;
+
+- (NSMenu *)applicationDockMenu;
 @end
