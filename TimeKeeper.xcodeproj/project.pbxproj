@@ -22,6 +22,8 @@
 		8C0A464C17440FA400A12670 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A464B17440FA400A12670 /* StopWatch.m */; };
 		8C0A464D17440FA400A12670 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A464B17440FA400A12670 /* StopWatch.m */; };
 		8C0A464F1746CC9400A12670 /* timekeeper.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8C0A464E1746CC9300A12670 /* timekeeper.icns */; };
+		8C29A9901747DBA10098AED7 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A98F1747DBA10098AED7 /* calendar.png */; };
+		8C29A9911747DBA10098AED7 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C29A98F1747DBA10098AED7 /* calendar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		8C0A464A17440FA400A12670 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
 		8C0A464B17440FA400A12670 /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
 		8C0A464E1746CC9300A12670 /* timekeeper.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = timekeeper.icns; sourceTree = "<group>"; };
+		8C29A98F1747DBA10098AED7 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 		8C0A46151742CDBA00A12670 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C29A98E1747DB790098AED7 /* images */,
 				8C0A46161742CDBA00A12670 /* TimeKeeper-Info.plist */,
 				8C0A46171742CDBA00A12670 /* InfoPlist.strings */,
 				8C0A461A1742CDBA00A12670 /* main.m */,
@@ -184,6 +188,14 @@
 				8C0A464B17440FA400A12670 /* StopWatch.m */,
 			);
 			name = utils;
+			sourceTree = "<group>";
+		};
+		8C29A98E1747DB790098AED7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8C29A98F1747DBA10098AED7 /* calendar.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +275,7 @@
 				8C0A46251742CDBB00A12670 /* MainMenu.xib in Resources */,
 				8C0A46461742CE8200A12670 /* MainViewController.xib in Resources */,
 				8C0A464F1746CC9400A12670 /* timekeeper.icns in Resources */,
+				8C29A9901747DBA10098AED7 /* calendar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0A46361742CDBB00A12670 /* InfoPlist.strings in Resources */,
+				8C29A9911747DBA10098AED7 /* calendar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

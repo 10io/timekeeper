@@ -11,7 +11,8 @@
 
 @interface MainViewController ()
     @property(nonatomic, strong) NSTimer *timer;
-    @property(nonatomic, strong) NSDateFormatter *dateFormatter;
+    @property(nonatomic, strong) NSDateFormatter *monthFormatter;
+    @property(nonatomic, strong) NSDateFormatter *dayFormatter;
     @property(nonatomic, strong) NSDateFormatter *hourFormatter;
     @property(nonatomic, strong) StopWatch *stopWatch;
 @end
@@ -27,8 +28,10 @@
                                                     selector:@selector(timerFired:)
                                                     userInfo:nil
                                                      repeats:YES];
-        self.dateFormatter = [[NSDateFormatter alloc] init];
-        [self.dateFormatter setDateFormat:@"dd-MM-yyyy"];
+        self.monthFormatter = [[NSDateFormatter alloc] init];
+        [self.monthFormatter setDateFormat:@"MMM"];
+        self.dayFormatter = [[NSDateFormatter alloc] init];
+        [self.dayFormatter setDateFormat:@"dd"];
         self.hourFormatter = [[NSDateFormatter alloc] init];
         [self.hourFormatter setDateFormat:@"HH:mm:ss"];
         self.stopWatch = [[StopWatch alloc] initWithDuration:(60 * 60 * 8 + 24 * 60)];
@@ -40,7 +43,8 @@
 -(void)timerFired:(NSTimer*)theTimer
 {
     NSDate *now = [NSDate date];
-    [self.dateTextField setStringValue:[self.dateFormatter stringFromDate:now]];
+    [self.monthTextField setStringValue:[self.monthFormatter stringFromDate:now]];
+    [self.dayTextField setStringValue: [self.dayFormatter stringFromDate:now]];
     [self.hourTextField setStringValue:[self.hourFormatter stringFromDate:now]];
     
     NSMutableString *remainingText = [[NSMutableString alloc] initWithString:[self.stopWatch remaining]];
