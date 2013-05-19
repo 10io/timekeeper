@@ -87,7 +87,16 @@ typedef enum {
     
     NSTimeInterval seconds = [self remainingInSeconds];
     
-    return [self.hourFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:seconds]];
+    if (seconds >= 0)
+    {
+        return [self.hourFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:seconds]];
+    }
+    else {
+        seconds = fabs(seconds);
+        NSMutableString* result = [[NSMutableString alloc] initWithString: @"+"];
+        [result appendString:[self.hourFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:seconds]]];
+        return result;
+    }
 }
 
 -(BOOL) counting
