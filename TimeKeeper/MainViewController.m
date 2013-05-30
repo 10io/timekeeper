@@ -70,10 +70,10 @@
 
     if([self.stopWatch fifteenMinutesRemaining]) {
         [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"15min"];
-    }
-
-    if([self.stopWatch fiveMinutesRemaining]) {
+    } else if([self.stopWatch fiveMinutesRemaining]) {
         [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"5min"];
+    } else {
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@""];
     }
 }
 
