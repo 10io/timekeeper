@@ -68,10 +68,11 @@
         [self.unpauseButton setHidden: false];
     }
 
-    if([self.stopWatch fifteenMinutesRemaining]) {
-        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"15min"];
-    } else if([self.stopWatch fiveMinutesRemaining]) {
+    if([self.stopWatch fiveMinutesRemaining]) {
         [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"5min"];
+    }
+    else if([self.stopWatch fifteenMinutesRemaining]) {
+        [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@"15min"];
     } else {
         [[[NSApplication sharedApplication] dockTile] setBadgeLabel:@""];
     }
