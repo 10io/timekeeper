@@ -23,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                       target:self
                                                     selector:@selector(timerFired:)
                                                     userInfo:nil

@@ -17,6 +17,7 @@ typedef enum {
 @interface StopWatch ()
     @property(nonatomic, assign) StopWatchStateType state;
     @property(nonatomic, assign) NSTimeInterval duration;
+    @property(nonatomic, assign) NSTimeInterval timerStartedAt;
     @property(nonatomic, strong) NSDateFormatter* hourFormatter;
     @property(nonatomic, strong) NSTimer* timer;
 @end
@@ -40,6 +41,7 @@ typedef enum {
 -(void) start
 {
     self.state = kRunning;
+    self.timerStartedAt = [NSDate timeIntervalSinceReferenceDate];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                   target:self
                                                 selector:@selector(timerFired:)
@@ -57,6 +59,7 @@ typedef enum {
 -(void) unpause
 {
     self.state = kRunning;
+    self.timerStartedAt = [NSDate timeIntervalSinceReferenceDate];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                   target:self
                                                 selector:@selector(timerFired:)
@@ -66,7 +69,7 @@ typedef enum {
 
 -(void)timerFired:(NSTimer*)theTimer
 {
-    self.duration = self.duration - 1;
+    self.duration -= 1;
 }
 
 -(BOOL) fifteenMinutesRemaining
